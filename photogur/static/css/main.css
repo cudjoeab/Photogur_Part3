@@ -1,8 +1,40 @@
 /* Color scheme */
 
-/*  */
+/* 
+turquoise blue: 
+#6CDAE7
+RGB: 108, 218, 231
+apricot: 
+#E7836C
+RGB: 231, 131, 108
+silver chalice: 
+#AAA7A7
+RGB: 170, 167, 167
+*/
+.info {
+    background: rgba(108, 218, 231, 0.5); 
+    padding: 20px 10px 0px 10px; 
+    color: white; 
+}
+
+
 
 body {
-    background: tomato; 
+    background: #AAA7A7; 
+    margin: 0 auto; 
+    m
+}
+
+ul {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1em; 
+
 }
 
