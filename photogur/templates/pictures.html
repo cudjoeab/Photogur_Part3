@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        {% for picture in pictures%}
+            <a href="{% url 'picture_details' id=picture.pk %}">           
+                <li>    
+                <h4>{{ picture.title }} </h4> 
+                <img src="{{ picture.url }}" alt= "{{ picture.title }}">
+                <p> {{ picture.artist }} </p>
+                <p>
+                    {{ picture.comments.count }} Comments 
+                </p>
+            
+            </li>
+            </a>
+        {% endfor %}
+    </ul>
+</body>
+</html>
