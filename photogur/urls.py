@@ -18,7 +18,7 @@ from django.urls import path
 from photogur import views 
 
 urlpatterns = [
-    # path('', root_path),
+    path('', views.pictures),
     path('admin/', admin.site.urls),
     path('pictures/', views.pictures), 
     path('pictures/<int:id>', views.picture_show, name='picture_details')
